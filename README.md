@@ -7,5 +7,6 @@ to Update a collection
 to Delete a collection
 
 
-before you run this project firstly run npm install
+before you run this project firstly run 
+----->    npm install    <------
 to install all dependencies
