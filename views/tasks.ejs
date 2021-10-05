@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        a{
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>TASKS:</h1>
+        <% if (tasks.length>0) { %>
+            <% tasks.forEach(task =>{ %>  
+            <a href="read/<%=task._id %>"><h1>
+            <%= task.description %>:<%= task.completed %>
+        </h1></a>
+        <% }) %> 
+        <% } else{ %>
+            <h1>No tasks to display</h1>
+        <% } %> 
+        <p><%= paragraph%></p>
+        <p>To delete task click on the task</p>
+    </div>
+</body>
+
+</html>
